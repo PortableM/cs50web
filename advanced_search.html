@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced search</title>
+        <style>
+            header {display: flex;
+                flex-direction: column;
+                border: 1px ;
+                margin: 20px;}
+            #row1 {display: flex;
+                margin: 20px}
+            #row2 {margin-left: 2%;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    color: #D93025;}
+            #separator {flex: 1 1;}
+            li {font-size: 20px;
+                display: inline-block;
+                margin-right: 0;
+               }
+            
+            #central {margin-left: 10px}
+
+            form {display: grid;
+                grid-template-columns: 200px 200px;
+                gap: 10px;
+                
+                }
+            #logo {width: 150px;
+                flex: 0;
+                justify-content: right;
+                align-items: right;
+                }
+
+            .q_box {width: 300px;
+                height: 18px;
+                border-radius: 6px;
+                border-width: 1px;
+                margin-left: 50px;
+                }
+            
+            #button {height: 22px;
+                width: 50%;
+                border-radius: 6px;
+                border-width: 1px;
+                margin-left: 150px; 
+                background-color: #4286F4;
+                color: white               
+                }
+            #button:hover {opacity:70%}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="row1">
+                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                <div id="separator"></div>
+                <ul>
+                    <li><a href="index.html">Google search</a></li>
+                </ul>
+            </div>
+            <div id="row2">
+                <p>Расширенный поиск</p>
+            </div>
+        </header>
+        <div id="central">
+            <h4>Найти страницы</h4>
+            <form action="https://www.google.ru/search">
+                <div class="q_row">All these words: </div>
+                <input  class="q_box" type="text" name="as_q">
+                <div class="q_row">This exact word or phrase:</div>
+                <input  class="q_box" type="text" name="as_epq">
+                <div class="q_row">Any of these words:</div>
+                <input  class="q_box" type="text" name="as_oq">
+                <div class="q_row">None of these words:</div>
+                <input  class="q_box" type="text" name="as_eq">
+                <input id="button" type="submit" value="Search">
+            </form>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,14 @@
+textarea {
+    min-height: 400px;
+}
+
+#org_div1 {display: flex;
+    flex-direction: column;
+}
+
+#org_div1 > * {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    border: 1px solid;
+    flex: 1 0;
+  }
